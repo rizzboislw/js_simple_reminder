@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+#main-container {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    background-image: linear-gradient(to bottom right, salmon, pink, #A862E5); 
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+}
+
+#title {
+    margin: 3rem;
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    word-spacing: 0.2em;
+    text-shadow: 6px 6px rgba(0, 0, 0, 0.4);
+}
+
+#input-area {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#inputtext {
+    border: transparent;
+    border-radius: 2rem;
+    width: 60vw;
+    height: 5vh;
+    font-size: 2.5rem;
+    padding: 2rem;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+    caret-color: #333;
+}
+
+#inputtext:focus {
+    border: transparent;
+    outline: transparent;
+    transform: scale(1.02);
+}
+
+#inputtext:hover {
+    transform: scale(1.02);
+}
+
+#submit {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 2.5rem;
+    color: #fff;;
+    border: transparent;
+    border-radius: 2rem;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 6px 6px 10px 0px rgba(0, 0, 0, 0.4);
+    font-weight: medium;
+    background-color: #484449;
+    text-shadow: 4px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+#submit:hover {
+    transform: scale(1.02);
+}
+
+#submit:active {
+    transform: scale(1.01);
+}
+
+#output-area {
+    margin: 3rem;
+    /* outline: 0.15rem solid black; */
+}
+
+li {
+    font-size: 2.5rem;
+    list-style: none;
+    line-height: 6rem;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 2.5px 2.5px rgba(0, 0, 0, 0.4);
+    transition: all 0.5s ease-in-out;
+}
+
+.markbutton {
+    background-color: #484449;
+    color: white;
+    font-size: 1.5rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    transition: all 0.2s ease-in-out;
+    border: transparent;
+    padding: 0.5rem 1rem;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.4);
+    
+}
+
+.markbutton:hover {
+    transform: scale(1.05);
+    color: greenyellow;
+}
+
+.DelButton {
+    background-color: #484449;
+    color: white;
+    font-size: 1.5rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    transition: all 0.2s ease-in-out;
+    border: transparent;
+    padding: 0.5rem 1rem;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.DelButton:hover {
+    transform: scale(1.05);
+    color: red;
+}
+
+li.MarkCross span {
+    text-decoration: line-through;
+    text-decoration-color: red;
+    text-decoration-style: solid;
+}
+
+.divCoverButtons {
+    min-width: 15vw;
+    height: max-content;
+    display:flex;
+    justify-content: space-around;
+}
+
+button {
+    cursor: pointer;
+}
